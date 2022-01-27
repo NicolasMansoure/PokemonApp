@@ -1,5 +1,9 @@
 # PokemonApp
 
+Réalisation d'un projet lié a l'univers des Pokemons grace au framwork Angular.
+
+.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
 
 ## Development server
