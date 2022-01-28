@@ -19,8 +19,7 @@ export class ListPokemonComponent implements OnInit {
   }
 
   selectPokemon(pokemon: Pokemon) {
-    alert("Vous avez cliqué sur " + pokemon.name);
-    let link = ['/pokemon', pokemon.id];
+    let link = ['/pokemons', pokemon.id];
     this.router.navigate(link);
   }
 

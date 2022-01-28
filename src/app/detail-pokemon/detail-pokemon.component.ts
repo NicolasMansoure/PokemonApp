@@ -5,19 +5,21 @@ import { POKEMONS } from '../mock-pokemons';
   
 @Component({
     selector: 'detail-pokemon',
-    templateUrl: './app/detail-pokemon.component.html'
+    templateUrl: './detail-pokemon.component.html'
 })
 export class DetailPokemonComponent implements OnInit {
-  
+
     pokemons!: Pokemon[];
     pokemon!: Pokemon;
   
-    constructor(private route: ActivatedRoute, private router: Router) {}
+    constructor(private route: ActivatedRoute, private router: Router) {
+
+    }
   
     ngOnInit(): void {
         this.pokemons = POKEMONS;
   
-        let id = +this.route.snapshot.paramMap.get('id');
+        let id = +this.route.snapshot.params['id']
         for (let i = 0; i < this.pokemons.length; i++) {
             if (this.pokemons[i].id == id) {
                 this.pokemon = this.pokemons[i];
