@@ -18,4 +18,6 @@ import { PageNotFoundComponent } from './page-not-found.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
